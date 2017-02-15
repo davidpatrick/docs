@@ -1,0 +1,8 @@
+versioning:
+  baseUrl: versioning-test
+  current: v2
+  versions:
+    - v1
+    - v2
+  defaultArticles:
+    v1: foo
