@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to use Auth0 rules to extend what Au
 budicon: 173
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-spring-security-mvc-sample',
   path: '06-Rules',

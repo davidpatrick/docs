@@ -6,7 +6,7 @@ budicon: 448
 
 Authentication tells your application to trust a user, granting him or her access to it. But that might not be enough. Most times, you will need to grant or restrict users from accessing specific parts of your application based on a number of attributes (commonly named "claims", being their "role", "department", or "country" a few examples). In this section, you'll learn how to assign a "role" claim to your users, and use those claims to authorize them to access an "admin" page.
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '07-Authorization',

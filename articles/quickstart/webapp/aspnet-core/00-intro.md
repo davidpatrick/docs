@@ -23,7 +23,7 @@ The final project after each of the steps is also available in the [Sample repos
 
 ## Create an Application
 
-<%= include('../../_includes/_new_app') %>
+<%= include('../../../_includes/_new_app') %>
 
 ![App Dashboard](/media/articles/angularjs/app_dashboard.png)
 

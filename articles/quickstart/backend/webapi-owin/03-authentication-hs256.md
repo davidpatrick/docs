@@ -4,7 +4,7 @@ name: Shows how to secure your API using the standard JWT middeware
 budicon: 500
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-aspnet-owin-webapi-sample',
   path: '03-Authentication-HS256/WebApi',
@@ -16,14 +16,14 @@ budicon: 500
 }) %>
 
 ::: panel-warning Signing Algorithm
-Auth0 can sign JSON Web Tokens (JWT) using either a symmetric key (HS256) or an asymmetric key (RS256). This document demonstrates how to use tokens signed with the HS256 Algorithm. 
+Auth0 can sign JSON Web Tokens (JWT) using either a symmetric key (HS256) or an asymmetric key (RS256). This document demonstrates how to use tokens signed with the HS256 Algorithm.
 
 It is however recommended that you [rather use RS256](/quickstart/backend/webapi-owin/01-authentication) tutorial.
 :::
 
 ## 1. Enable OAuth 2.0 API Authorization
 
-<%= include('../../_includes/_configure_oauth2aas') %>
+<%= include('../../../_includes/_configure_oauth2aas') %>
 
 ## 2. Create a Resource Server (API)
 
@@ -130,7 +130,7 @@ During development you may want to test your API with Postman. If you make a req
 
 ![Unauthorized request in Postman](/media/articles/server-apis/webapi-owin/postman-not-authorized.png)
 
-As mentioned in the previous step, you will need to pass along an `access_token` in the HTTP Authorization header. A quick and easy way to obtain an `access_token` for test purposes is from the __Test__ tab of your API settings: 
+As mentioned in the previous step, you will need to pass along an `access_token` in the HTTP Authorization header. A quick and easy way to obtain an `access_token` for test purposes is from the __Test__ tab of your API settings:
 
 ![Obtain a JWT](/media/articles/server-apis/webapi-owin/request-access-token.png)
 

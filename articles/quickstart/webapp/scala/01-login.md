@@ -5,7 +5,7 @@ description: This tutorial demonstrates how to use the Auth0 Play 2 Scala SDK to
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-scala-samples',
   path: '00-Starter-Seed',
@@ -111,7 +111,7 @@ Your callback URL should look something like:
 
 ## Trigger Login Manually or Integrate Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 **Note:** The `redirectUrl` specified in the `Auth0Lock` constructor must match the callback URL specified in the previous step.
 

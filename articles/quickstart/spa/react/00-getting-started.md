@@ -16,7 +16,7 @@ create-react-app my-app --scripts-version auth0-react-scripts
 The `auth0-react-scripts` app demonstrates **login**, **session handling**, and **user profiles**.
 :::
 
-<%= include('../../_includes/_new_app') %>
+<%= include('../../../_includes/_new_app') %>
 
 ## About the Sample Applications
 

@@ -3,7 +3,7 @@ title: Custom Login
 description: This tutorial demonstrates how to use the Auth0 Angular 1.x SDK to add authentication and authorization to your mobile app.
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-angularjs-sample',
   path: '02-Custom-Login'
@@ -116,7 +116,7 @@ Create a `login` view with **username** and **password** `input` elements to all
 
 <div id="login-container">
   <form>
-    
+
     <div class="form-group">
       <label for="user">Username</label>
       <input
@@ -148,7 +148,7 @@ Create a `login` view with **username** and **password** `input` elements to all
       ng-click="vm.auth.login(vm.username, vm.password)">
         Log In
     </button>
-    <button 
+    <button
       class="btn btn-primary"
       type="submit"
       ng-disabled="vm.loading"
@@ -210,7 +210,7 @@ The `authService` is the place where all the calls to angular-auth0, and thus to
         connection: 'google-oauth2'
       });
     }
-    
+
     function handleParseHash() {
       angularAuth0.parseHash(function(err, authResult) {
         if (authResult && authResult.idToken) {

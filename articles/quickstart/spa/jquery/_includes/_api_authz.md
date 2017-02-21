@@ -85,7 +85,7 @@ fetch('{API URL}', {
 });
 ```
 
-<%= include('../../../_includes/_create_resource_server') %>
+<%= include('../../../../_includes/_create_resource_server') %>
 
 ## Log Out
 

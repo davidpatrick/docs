@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to integrate Auth0 with NodeJS to li
 budicon: 345
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-nodejs-webapp-sample',
   path: '05-Linking-Accounts',

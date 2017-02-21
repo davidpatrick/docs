@@ -1,10 +1,10 @@
 ---
-title: API Authorization 
+title: API Authorization
 description: This tutorial will show you how authorize or deny a user to access certain API endpoints based on the scope of the access token.
 budicon: 500
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-aspnet-owin-webapi-sample',
   path: '02-Authorization/WebApi',
@@ -43,9 +43,9 @@ Once you have created the list of scopes, go to the __Non-Interactive Clients__ 
 
 ![Configure Client](/media/articles/server-apis/webapi-scopes/configure-api-client-scopes.png)
 
-## 2. Enforcing scopes in your ASP.NET Web API 
+## 2. Enforcing scopes in your ASP.NET Web API
 
-To ensure that a correct `scope` is present in order to execute a particular API endpoint, you can create a custom Authorization Attribute. 
+To ensure that a correct `scope` is present in order to execute a particular API endpoint, you can create a custom Authorization Attribute.
 
 Create a class called `ScopeAuthorizeAttribute` which inherits from `System.Web.Http.AuthorizeAttribute`. This Authorization Attribute will check that the `scope` claim issued by your Auth0 tenant is present, and if so it will ensure that the `scope` claim contains the requested scope.
 
@@ -81,7 +81,7 @@ public class ScopeAuthorizeAttribute : AuthorizeAttribute
         HandleUnauthorizedRequest(actionContext);
     }
 }
-``` 
+```
 
 To ensure that a scope is present in order to call a particular API endpoint, you simply need to decorate the action with the `ScopeAuthorize` attribute, and pass the name of the required `scope` in the `scope` parameter:
 
@@ -109,12 +109,12 @@ public class TimesheetsController : ApiController
 
 ## 3. Testing the Authorization Postman
 
-You can test the API endpoints by generating a token with the required scopes, and passing the `access_token` as a Bearer token in the Authorization header. 
+You can test the API endpoints by generating a token with the required scopes, and passing the `access_token` as a Bearer token in the Authorization header.
 
 If the required `scope` is present, the API call will succeed:
 
 ![](/media/articles/server-apis/aspnet-core-webapi/scope-success.png)
 
-If the required `scope` is not present, an HTTP Status 403 (Forbidden) will be returned: 
+If the required `scope` is not present, an HTTP Status 403 (Forbidden) will be returned:
 
 ![](/media/articles/server-apis/aspnet-core-webapi/scope-forbidden.png)

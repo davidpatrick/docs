@@ -5,7 +5,7 @@ description: This tutorial will show you how to use the Auth0 NancyFX SDK to add
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-nancyfx-samples',
   path: '00-Starter-Seed',
@@ -99,7 +99,7 @@ public class Authentication : NancyModule
 
 ## Triggering Login Manually or Integrating Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 > **Note:** Please note that the `redirectUrl` specified in the `Auth0Lock` constructor **must match** the one specified in the previous step
 

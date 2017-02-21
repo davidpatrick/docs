@@ -13,7 +13,7 @@ If you prefer to follow along with this quickstart you can download the [seed pr
 
 The final project after each of the steps is also available in the [Sample repository](https://github.com/auth0-samples/auth0-spring-security-api-sample). You can find the final result for each step in the relevant folder inside the repository.
 
-<%= include('../../_includes/_new_app') %>
+<%= include('../../../_includes/_new_app') %>
 
 ## Setup dependencies
 

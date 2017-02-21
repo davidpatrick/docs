@@ -4,13 +4,13 @@ description: This tutorial demonstrates how to make authenticated API calls
 budicon: 546
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-javascript-spa',
   path: '08-Calling-Api'
 }) %>
 
-<%= include('../../_includes/_calling_apis') %>
+<%= include('../../../_includes/_calling_apis') %>
 
 ## Sending Authenticated HTTP Requests
 

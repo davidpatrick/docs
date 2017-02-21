@@ -3,13 +3,13 @@ title: Linking Accounts
 description: This tutorial demonstrates how to integrate Auth0 with Angular 1.x to link accounts
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-angularjs-sample',
   path: '05-Linking-Accounts'
 }) %>
 
-<%= include('../../_includes/_linking_accounts') %>
+<%= include('../../../_includes/_linking_accounts') %>
 
 ```js
 // components/auth/auth.service.js
@@ -23,7 +23,7 @@ description: This tutorial demonstrates how to integrate Auth0 with Angular 1.x 
     .service('authService', authService);
 
   function authService(lock, authManager, $q, $http) {
-	
+
     function linkAccount() {
       try {
         var profile = JSON.parse(localStorage.getItem('profile'));
@@ -54,7 +54,7 @@ description: This tutorial demonstrates how to integrate Auth0 with Angular 1.x 
 
     }
 
-    return {	 
+    return {
       linkAccount: linkAccount
     }
   }
@@ -78,7 +78,7 @@ Now that the second user is authenticated, the accounts can be linked.
   function authService(lock, authManager, $q, $http) {
 
     lockLink.on('authenticated', function (authResult) {
-    
+
       $http({
         method: 'POST',
         url: 'https://${account.namespace}/api/v2/users/' + profile.user_id + '/identities',
@@ -90,7 +90,7 @@ Now that the second user is authenticated, the accounts can be linked.
         }
       }).then(function () {
         lockLink.hide();
-      
+
         lock.getProfile(token, function (error, profile) {
           if (!error) {
             localStorage.setItem('profile', JSON.stringify(profile));
@@ -98,7 +98,7 @@ Now that the second user is authenticated, the accounts can be linked.
           } else {
             deferred.reject(error);
           }
-        });    
+        });
       });
     });
   }
@@ -136,21 +136,21 @@ To begin the linking process, call the `linkAccount` method.
 
 ## Linked Accounts User Profile Information
 
-The user profile contains an array of identities which includes the profile information from linked providers. 
+The user profile contains an array of identities which includes the profile information from linked providers.
 
-To view a user's identities, access the [Users](${manage_url}/#/users) page on the Auth0 dashboard, select a user, and scroll down to `identities`. 
+To view a user's identities, access the [Users](${manage_url}/#/users) page on the Auth0 dashboard, select a user, and scroll down to `identities`.
 
 This example shows a user with a linked Google account:
 
 ![User identities](/media/articles/users/user-identities-linked.png)
 
-If you fetch the profile after linking accounts, this same information will be available. 
+If you fetch the profile after linking accounts, this same information will be available.
 
 You can display this information and provide an **Unlink** button:
 
 ```html
 <!-- components/home/home.html -->
-	
+
 <div class="identities-wrap" ng-if="isAuthenticated">
   <button class="btn btn-primary" ng-click="vm.linkAccount()">Link Account</button>
   <ul class="list-group identities-list">

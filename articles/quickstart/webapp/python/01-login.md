@@ -7,7 +7,7 @@ budicon: 448
 
 You can get started by either downloading the seed project or if you would like to add Auth0 to an existing application you can follow the tutorial steps.
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-python-web-app',
   path: '00-Starter-Seed',
@@ -42,7 +42,7 @@ http://yourUrl/callback
 
 ## 4. Trigger Login Manually or Integrate Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 > **Note:** Please note that the `redirectUrl` specified in the `Auth0Lock` constructor **must match** the URL specified in the previous step
 

@@ -4,7 +4,7 @@ default: true
 description: This tutorial demonstrates how to use the Auth0 with Angular 1.x applications
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-angularjs-sample',
   path: '01-Login',
@@ -13,7 +13,7 @@ description: This tutorial demonstrates how to use the Auth0 with Angular 1.x ap
   ]
 }) %>
 
-<%= include('../../_includes/_callback_url') %>
+<%= include('../../../_includes/_callback_url') %>
 
 <%= include('_includes/_dependencies') %>
 

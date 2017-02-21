@@ -46,6 +46,6 @@ Then, run `pod install`.
 
 > For further reference on Cocoapods, check [their official documentation](http://guides.cocoapods.org/using/getting-started.html).
 
-<%= include('../../_includes/_new_app') %>
+<%= include('../../../_includes/_new_app') %>
 
 <%= include('_includes/_config') %>

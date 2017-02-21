@@ -20,7 +20,7 @@ Create a new client application in your [Auth0 dashboard](${manage_url}) and ret
 
 ![App Dashboard](/media/articles/server-platforms/rails/app_dashboard.png)
 
-<%= include('../../_includes/_callback_url') %>
+<%= include('../../../_includes/_callback_url') %>
 
 ${include('../_callbackRegularWebApp')}
 

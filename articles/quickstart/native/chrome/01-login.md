@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to use the Auth0-Chrome SDK to add a
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-community',
   repo: 'auth0-chrome-sample',
   path: '00-Starter-Seed',
@@ -237,7 +237,7 @@ chrome.runtime.onMessage.addListener(function (event) {
       });
   }
 });
-``` 
+```
 
 When the `authenticate` message is received, an `Auth0Chrome` instance is created and its `authenticate` method is called, which opens a new window showing Auth0's hosted Lock.
 

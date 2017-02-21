@@ -13,8 +13,8 @@ If you want to follow along with these quickstart guides, you can download the s
 
 Each step in the quickstarts contains a sample project available for download which shows the finished result for that step.
 
-<%= include('../../_includes/_new_app') %>
+<%= include('../../../_includes/_new_app') %>
 
-<%= include('../../_includes/_callback_url') %>
+<%= include('../../../_includes/_callback_url') %>
 
 <%= include('_includes/_dependencies') %>

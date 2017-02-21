@@ -6,7 +6,7 @@ budicon: 448
 
 The [login](/quickstart/webapp/rails/01-login) step explains how to log users in using the Lock widget and a gem called [OmniAuth](https://github.com/intridea/omniauth) (and a specific Auth0 strategy for OmniAuth). In this step, you'll learn how to access the user profile data once the user has logged into the application.
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '04-User-Profile',

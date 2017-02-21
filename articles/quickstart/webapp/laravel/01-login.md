@@ -5,7 +5,7 @@ description: This tutorial demonstrates how to use the Auth0 PHP Laravel SDK to 
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-laravel-php-web-app',
   path: '00-Starter-Seed',
@@ -85,7 +85,7 @@ Route::get('/auth0/callback', '\Auth0\Login\Auth0Controller@callback');
 
 You can trigger the login in different ways, like redirecting to a login link or you can use [Lock](/lock), by adding the following javascript into a Laravel view or layout (e.g. in `resources/views/welcome.blade.php`)
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 Now, after user has logged in, you will be able to access to the logged user info with `Auth::user()`.
 

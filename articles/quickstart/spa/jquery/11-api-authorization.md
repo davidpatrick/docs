@@ -4,15 +4,15 @@ description: This tutorial demonstrates how to use Auth0 to make authorized API 
 budicon: 500
 ---
 
-<%= include('../../_includes/_api_auth_intro') %>
+<%= include('../../../_includes/_api_auth_intro') %>
 
-<%= include('../../_includes/_compat_warning') %>
+<%= include('../../../_includes/_compat_warning') %>
 
 ### Before Starting
 
 ## 1. Enable OAuth 2.0 API Authorization
 
-<%= include('../../_includes/_configure_oauth2aas') %>
+<%= include('../../../_includes/_configure_oauth2aas') %>
 
 ## 2. Create an Application
 
@@ -24,7 +24,7 @@ Be sure to register the URL of your app in the Allowed Callback URLs in your Cli
 
 ## 3. Create a Resource Server (API)
 
-<%= include('../../_includes/_new_api') %>
+<%= include('../../../_includes/_new_api') %>
 
 ![Create API](/media/articles/api-auth/api-5.png)
 ![Update Scopes](/media/articles/api-auth/api-6.png)

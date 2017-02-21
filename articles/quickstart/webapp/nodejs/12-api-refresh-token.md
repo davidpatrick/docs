@@ -5,7 +5,7 @@ description: This tutorial demonstrates how to use Auth0 to renew Access Tokens 
 
 A Refresh Token is a special kind of token that can be used to obtain a renewed access token at any time. You can request new access tokens. Remember, Refresh Tokens must be stored securely by an application because they essentially allow a user to remain authenticated forever. For more information, check out [our documentation](https://auth0.com/docs/api-auth).
 
-<%= include('../../_includes/_compat_warning') %>
+<%= include('../../../_includes/_compat_warning') %>
 
 ## Obtaining a Refresh Token
 

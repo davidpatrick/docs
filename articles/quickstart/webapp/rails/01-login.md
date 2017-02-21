@@ -4,7 +4,7 @@ description: Learn how to login using the Auth0 Lock widget and OmniAuth.
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '01-Login',
@@ -61,7 +61,7 @@ get "/auth/failure" => "auth0#failure"
 
 ## Trigger Login with Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 > **NOTE:** The `callbackURL` specified in the `Auth0Lock` constructor **must match** the one specified in the **Allowed Callback URLs** area in your Auth0 dashboard. Follow the [introduction](/quickstart/webapp/rails/00-introduction) step for further detail.
 
@@ -73,7 +73,7 @@ redirect_to '/auth/oauth2?connection=CONNECTION_NAME'
 
 > [Click here](https://github.com/intridea/omniauth/wiki/Auth-Hash-Schema) to check all the information that the userinfo hash has.
 
-## Check the User's Authentication Status 
+## Check the User's Authentication Status
 
 You can use a controller concern to control access to routes that require the user to be authenticated.
 

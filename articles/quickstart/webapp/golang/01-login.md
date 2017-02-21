@@ -4,7 +4,7 @@ description: This tutorial will demonstrates how to use the Auth0 Go SDK to add 
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-golang-web-app',
   path: '01-Login',
@@ -119,7 +119,7 @@ http://yourUrl/callback
 
 ## Triggering Login Manually or Using Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 > **Note:** Please note that the `redirectUrl` specified in the `Auth0Lock` constructor **must match** the one specified in the previous step
 

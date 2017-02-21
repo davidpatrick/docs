@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to use the Auth0 library to add cust
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-jquery-samples',
   path: '02-Custom-Login',
@@ -50,7 +50,7 @@ Create a template which has a `form` for users to submit their credentials. The 
     required>
 
   <input
-    type="password" 
+    type="password"
     id="password"
     class="form-control"
     placeholder="Password"
@@ -116,7 +116,7 @@ $(document).ready(function() {
   $('#btn-register').on('click', signup);
   $('#btn-google').on('click', loginWithGoogle);
   $('#btn-logout').on('click', logout);
-  
+
   function login() {
     var username = $('#username').val();
     var password = $('#password').val();

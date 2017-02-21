@@ -4,7 +4,7 @@ name: Shows how to secure your API using the standard JWT middeware
 budicon: 500
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-aspnet-owin-webapi-sample',
   path: '04-Authentication-RS256-Deprecated/WebApi',

@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to use the Auth0 library to add cust
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-javascript-spa',
   path: '02-Custom-Login'
@@ -48,7 +48,7 @@ Create a template which has a `form` for users to submit their credentials. The 
     required>
 
   <input
-    type="password" 
+    type="password"
     id="password"
     class="form-control"
     placeholder="Password"
@@ -184,7 +184,7 @@ window.addEventListener('load', function() {
           show_sign_in();
         }
       });
-      
+
     }
   }
 

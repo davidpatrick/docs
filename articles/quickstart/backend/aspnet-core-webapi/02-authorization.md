@@ -1,10 +1,10 @@
 ---
-title: API Authorization 
+title: API Authorization
 description: This tutorial will show you how authorize or deny a user to access certain API endpoints based on the scope of the access token.
 budicon: 500
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-aspnetcore-webapi-sample',
   path: '02-Authorization',
@@ -42,15 +42,15 @@ Once you have created the list of scopes, go to the __Non Interactive Clients__ 
 
 ![Configure Client](/media/articles/server-apis/aspnet-core-webapi/configure-api-client-scopes.png)
 
-## 2. Enforcing scopes in your ASP.NET Core API 
+## 2. Enforcing scopes in your ASP.NET Core API
 
-To ensure that a correct `scope` is present in order to execute a particular API endpoint, you can make use of the new Policy-Based Authorization in ASP.NET Core. 
+To ensure that a correct `scope` is present in order to execute a particular API endpoint, you can make use of the new Policy-Based Authorization in ASP.NET Core.
 
 ::: panel-info ASP.NET Core Policy-Based Authorization
 For a better understanding of the code which follows, it is suggested that you read the ASP.NET Core documentation on [Policy-Based Authorization](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/policies).
 :::
 
-Create a new Authorization Requirement called `HasScopeRequirement`. This requirement will check that the `scope` claim issued by your Auth0 tenant is present, and if so it will ensure that the `scope` claim contains the requested scope. If it does then the Authorization Requirement is met. 
+Create a new Authorization Requirement called `HasScopeRequirement`. This requirement will check that the `scope` claim issued by your Auth0 tenant is present, and if so it will ensure that the `scope` claim contains the requested scope. If it does then the Authorization Requirement is met.
 
 ```csharp
 public class HasScopeRequirement : AuthorizationHandler<HasScopeRequirement>, IAuthorizationRequirement
@@ -80,9 +80,9 @@ public class HasScopeRequirement : AuthorizationHandler<HasScopeRequirement>, IA
         return Task.CompletedTask;
     }
 }
-``` 
+```
 
-Next, you can define a policy for each of the scopes in your application in the `ConfigureServices` method of your `Startup` class: 
+Next, you can define a policy for each of the scopes in your application in the `ConfigureServices` method of your `Startup` class:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -125,12 +125,12 @@ public class TimesheetsController : Controller
 
 ## 3. Testing the Authorization Postman
 
-You can test the API endpoints by generating a token with the required scopes, and passing the `access_token` as a Bearer token in the Authorization header. 
+You can test the API endpoints by generating a token with the required scopes, and passing the `access_token` as a Bearer token in the Authorization header.
 
 If the required `scope` is present, the API call will succeed:
 
 ![](/media/articles/server-apis/aspnet-core-webapi/scope-success.png)
 
-If the required `scope` is not present, an HTTP Status 403 (Forbidden) will be returned: 
+If the required `scope` is not present, an HTTP Status 403 (Forbidden) will be returned:
 
 ![](/media/articles/server-apis/aspnet-core-webapi/scope-forbidden.png)

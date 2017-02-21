@@ -5,7 +5,7 @@ description: This tutorial demonstrates how to use the Auth0 ServiceStack SDK to
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-servicestack-samples',
   path: '00-Starter-Seed',
@@ -138,7 +138,7 @@ public class HelloService : Service
 
 ## Triggering Login Manually or Integrating Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 ## Add UI Code to Login and Invoke the `HelloService`
 

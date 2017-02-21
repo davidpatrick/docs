@@ -4,13 +4,13 @@ description: This tutorial demonstrates how to link different user accounts in y
 budicon: 345
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-javascript-spa',
   path: '05-Linking-Accounts'
 }) %>
 
-<%= include('../../_includes/_linking_accounts') %>
+<%= include('../../../_includes/_linking_accounts') %>
 
 
 ```js

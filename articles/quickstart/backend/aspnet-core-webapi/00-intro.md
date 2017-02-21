@@ -5,7 +5,7 @@ description: This Quickstart will guide you through the various tasks related to
 budicon: 715
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-aspnetcore-webapi-sample',
   path: '00-Starter-Seed',
@@ -16,7 +16,7 @@ budicon: 715
   ]
 }) %>
 
-<%= include('../../_includes/_api_auth_intro') %>
+<%= include('../../../_includes/_api_auth_intro') %>
 
 This Quickstart will guide you through the various tasks related to using Auth0-issued Access Tokens to secure your ASP.NET Core Web API.
 
@@ -28,7 +28,7 @@ The final project after each of the steps is also available in the [Sample repos
 
 ## 1. Enable OAuth 2.0 API Authorization
 
-<%= include('../../_includes/_configure_oauth2aas') %>
+<%= include('../../../_includes/_configure_oauth2aas') %>
 
 ## 2. Create a Resource Server (API)
 

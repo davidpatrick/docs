@@ -6,7 +6,7 @@ budicon: 448
 
 In addition to a carefully-considered default user interface, Lock offers UI customization functionality.
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '09-Customizing-Lock',

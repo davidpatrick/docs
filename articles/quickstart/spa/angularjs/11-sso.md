@@ -3,7 +3,7 @@ title: Single Sign-On
 description: This tutorial demonstrates how to use single sign on in Angular 1.x applications
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-angularjs-sample',
   path: '11-SSO'
@@ -72,7 +72,7 @@ And then add the `auth0.auth0` module and configure the `angularAuth0Provider` p
       clientID: '${account.clientId}',
       domain: '${account.namespace}'
     });
-	
+
   }
 
 })();
@@ -131,9 +131,9 @@ To guarantee that the callback for Lock's `authenticated` event is called before
     .run(run);
 
   function run($timeout, authService) {
-	
+
     $timeout(authService.checkAuthOnRefresh);
-   
+
   }
 
 })();
@@ -161,9 +161,9 @@ Note that you will also likely need to call the existing `logout` method from th
   function HomeController(authService, angularAuth0) {
 
     vm.logoutFromAuth0 = function() {
-      angularAuth0.logout({ 
+      angularAuth0.logout({
         returnTo: 'http://localhost:3000/',
-        client_id: ${account.clientId} 
+        client_id: ${account.clientId}
       });
       authService.logout();
     }

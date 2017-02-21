@@ -6,7 +6,7 @@ budicon: 448
 
 The [login](/quickstart/webapp/rails/01-login) step explains how to log a user in using Lock and OmniAuth. You may also want to design your own custom user interface for authentication. In this step, you'll learn how to create a custom login form using the Auth0 Ruby SDK.
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '02-Custom-Login',

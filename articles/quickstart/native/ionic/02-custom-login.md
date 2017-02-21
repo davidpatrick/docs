@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to use Auth0 to add authentication a
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-ionic-samples',
   path: '02-Custom-Login',
@@ -79,7 +79,7 @@ This view is calling a `login` and `loginWithGoogle` which should be defined in 
 
     vm.login = login;
     vm.signup = signup;
-    vm.loginWithGoogle = authService.loginWithGoogle;    
+    vm.loginWithGoogle = authService.loginWithGoogle;
 
     // Log in with username and password
     function login() {

@@ -4,7 +4,7 @@ description: This tutorial demonstrates how to integrate Auth0 with ReactJS to a
 budicon: 292
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '04-User-Profile',
@@ -423,7 +423,7 @@ Lastly, render the `ProfileEdit` component below the `ProfileDetails` on the Hom
 // src/views/Main/Home/Home.js
 
 export class Home extends React.Component {
-  
+
   render() {
     const { profile } = this.state
     return (

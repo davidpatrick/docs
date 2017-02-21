@@ -5,7 +5,7 @@ description: This tutorial demonstrates how to use the Auth0 ASP.NET SDK to add 
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0',
   repo: 'auth0-aspnet',
   path: 'examples/auth0-aspnet-mvc4-sample/',
@@ -37,7 +37,7 @@ ${snippet(meta.snippets.setup)}
 
 ## 4.Trigger Login Manually or Integrating Lock
 
-<%= include('../../_includes/_lock-sdk') %>
+<%= include('../../../_includes/_lock-sdk') %>
 
 ## 5. Access User Information
 

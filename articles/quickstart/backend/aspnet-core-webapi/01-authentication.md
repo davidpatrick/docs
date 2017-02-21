@@ -5,7 +5,7 @@ description: Shows how to secure your API using the standard JWT middeware.
 budicon: 500
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-aspnetcore-webapi-sample',
   path: '01-Authentication',
@@ -104,7 +104,7 @@ During development, you may want to test your API with Postman. If you make a re
 
 ![Unauthorized request in Postman](/media/articles/server-apis/aspnet-core-webapi/postman-not-authorized.png)
 
-As mentioned in the previous step, you will need to pass along an `access_token` in the HTTP Authorization header. A quick and easy way to obtain an `access_token` for test purposes is from the __Test__ tab of your API settings: 
+As mentioned in the previous step, you will need to pass along an `access_token` in the HTTP Authorization header. A quick and easy way to obtain an `access_token` for test purposes is from the __Test__ tab of your API settings:
 
 ![Obtain a JWT](/media/articles/server-apis/aspnet-core-webapi/request-access-token.png)
 

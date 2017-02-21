@@ -3,7 +3,7 @@ title: User Profile
 description: This tutorial demonstrates how to display the user's profile
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-angularjs-sample',
   path: '04-User-Profile'
@@ -27,7 +27,7 @@ To get the user's profile, call the `getProfile` method on `lock`, passing in a 
     .service('authService', authService);
 
   function authService($q, lock, authManager) {
-    
+
     var deferredProfile = $q.defer();
 
     function registerAuthenticationListener() {

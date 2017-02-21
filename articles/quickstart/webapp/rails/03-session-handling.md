@@ -4,7 +4,7 @@ description: Learn how to store user data in your session and clean it up upon l
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '03-Session-Handling',

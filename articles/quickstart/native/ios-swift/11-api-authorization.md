@@ -6,13 +6,13 @@ budicon: 500
 
 At some point, your APIs may need to allow limited access to users, servers, or servers on behalf of users. This tutorial demonstrates how to use the [Authorization Code Flow with PKCE](https://auth0.com/docs/api-auth/tutorials/authorization-code-grant-pkce) to give your applications (or third-party applications) limited access to your APIs on behalf of users. For more information, check out [our documentation](https://auth0.com/docs/api-auth).
 
-<%= include('../../_includes/_compat_warning') %>
+<%= include('../../../_includes/_compat_warning') %>
 
 ### Before Starting
 
 ## Enable OAuth 2.0 API Authorization
 
-<%= include('../../_includes/_configure_oauth2aas') %>
+<%= include('../../../_includes/_configure_oauth2aas') %>
 
 ## Create an Application
 
@@ -24,7 +24,7 @@ Be sure to register the URL of your app in the Allowed Callback URLs in your Cli
 
 ## Create a Resource Server (API)
 
-<%= include('../../_includes/_new_api') %>
+<%= include('../../../_includes/_new_api') %>
 
 ![Create API](/media/articles/api-auth/api-5.png)
 ![Update Scopes](/media/articles/api-auth/api-6.png)

@@ -3,7 +3,7 @@ title: Authentication (RS256)
 description: This tutorial demonstrates how to verify an RS256-signed JSON Web Token and protect endpoints in an Express API
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-express-api-samples',
   path: '02-Authenticate-RS256',

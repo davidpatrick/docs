@@ -4,7 +4,7 @@ description: Link and Unlink accounts from other identity providers using the Ra
 budicon: 448
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-rubyonrails-sample',
   path: '05-Linking-Accounts',
@@ -46,9 +46,9 @@ function linkPasswordAccount() {
   if (connection) {
     linkOptions.allowedConnections = [connection];
   }
-  
+
   var linkLock = new Auth0Lock('${ "<%= Rails.application.secrets.auth0_client_id %>" }', '${ "<%= Rails.application.secrets.auth0_domain %>" }', linkOptions);
-  
+
   //open lock in signin mode, with the customized options for linking
   linkLock.show();
 }

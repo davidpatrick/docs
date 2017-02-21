@@ -4,7 +4,7 @@ description: This tutorial will show you how to integrate Auth0 with Angular 2 t
 budicon: 345
 ---
 
-<%= include('../../_includes/_package', {
+<%= include('../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-angularjs2-systemjs-sample',
   path: '05-Linking-Accounts',
@@ -13,7 +13,7 @@ budicon: 345
   ]
 }) %>
 
-<%= include('../../_includes/_linking_accounts') %>
+<%= include('../../../_includes/_linking_accounts') %>
 
 ```typescript
 // app/auth.service.ts
