@@ -4,7 +4,9 @@ description: This tutorial will show you how assign roles to your users, and use
 budicon: 500
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '07-Authorization',
@@ -13,11 +15,11 @@ budicon: 500
   ]
 }) %>
 
-<%= include('../_includes/_authorization-introduction', { ruleslink: '/quickstart/spa/react/06-rules' }) %>_
+<%= include('../../_includes/_authorization-introduction', { ruleslink: '/quickstart/spa/react/06-rules' }) %>_
 
 ## Create a Rule to Assign Roles
 
-<%= include('../_includes/_authorization-create-rule') %>_
+<%= include('../../_includes/_authorization-create-rule') %>_
 
 ## Check if a User's Role is Present
 
@@ -104,7 +106,7 @@ export const makeMainRoutes = () => {
 export default makeMainRoutes
 ```
 
-<%= include('_includes/_env-note') %>
+<%= include('../_includes/_env-note') %>
 
 Another feature introduced in the above code is correct redirection after a successful login. Now the current URL is stored as a local storage item before the user is directed to the login page. Later, the value is retrieved in the `redirectAfterLogin` method.
 

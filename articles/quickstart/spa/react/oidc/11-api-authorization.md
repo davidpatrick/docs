@@ -3,25 +3,27 @@ title: OAuth 2.0 API Authorization
 description: This tutorial demonstrates how to use API authorization
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '11-OAuth2-Authorization'
 }) %>
 
-<%= include('../../../_includes/_api_auth_intro') %>
+<%= include('../../../../_includes/_api_auth_intro') %>
 
-<%= include('../../../_includes/_compat_warning') %>
+<%= include('../../../../_includes/_compat_warning') %>
 
 ### Before Starting
 
 ## Enable OAuth 2.0 API Authorization
 
-<%= include('../../../_includes/_configure_oauth2aas') %>
+<%= include('../../../../_includes/_configure_oauth2aas') %>
 
 ## Create an Application
 
-<%= include('../../../_includes/_new_app_no_sample') %>
+<%= include('../../../../_includes/_new_app_no_sample') %>
 
 ![App Dashboard](/media/articles/angularjs/spa_client_create.png)
 
@@ -29,7 +31,7 @@ Be sure to register the URL of your app in the Allowed Callback URLs in your App
 
 ## Create a Resource Server (API)
 
-<%= include('../../../_includes/_new_api') %>
+<%= include('../../../../_includes/_new_api') %>
 
 ![Create API](/media/articles/api-auth/api-5.png)
 ![Update Scopes](/media/articles/api-auth/api-6.png)
@@ -169,7 +171,7 @@ componentDidMount(){
 }
 ```
 
-<%= include('../../../_includes/_create_resource_server') %>
+<%= include('../../../../_includes/_create_resource_server') %>
 
 ## Log Out
 

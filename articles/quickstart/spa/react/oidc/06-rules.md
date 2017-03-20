@@ -4,7 +4,9 @@ description: This tutorial will show you how to use Auth0 rules to extend what A
 budicon: 173
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '06-Rules',
@@ -13,15 +15,15 @@ budicon: 173
   ]
 }) %>
 
-<%= include('../_includes/_rules-introduction') %>
+<%= include('../../_includes/_rules-introduction') %>
 
 ## Create a Rule
 
-<%= include('../_includes/_rules-create-section') %>
+<%= include('../../_includes/_rules-create-section') %>
 
 ## Test the Rule Result
 
-<%= include('../_includes/_rules-test-result-intro', { profilelink: '/quickstart/spa/react/04-user-profile' }) %>
+<%= include('../../_includes/_rules-test-result-intro', { profilelink: '/quickstart/spa/react/04-user-profile' }) %>
 
 ```javascript
 // src/components/Profile/ProfileDetails.js

@@ -4,7 +4,9 @@ description: This tutorial demonstrates how to integrate Auth0 with ReactJS to a
 budicon: 292
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '04-User-Profile',
@@ -321,7 +323,7 @@ export class ProfileDetails extends React.Component {
 
 ## 5. Update User Profile
 
-<%= include('../_includes/_profile-metadata-explanation') %>
+<%= include('../../_includes/_profile-metadata-explanation') %>
 
 To update the user profile, call the [Update a user](/api/management/v2#!/Users/patch_users_by_id) endpoint with the new profile values.
 

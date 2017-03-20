@@ -4,7 +4,9 @@ description: This tutorial demonstrates how to integrate Auth0 with ReactJS to a
 budicon: 448
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '01-Login',
@@ -13,4 +15,4 @@ budicon: 448
   ]
 }) %>
 
-<%= include('_includes/_login') %>
+<%= include('../_includes/_login') %>

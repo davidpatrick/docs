@@ -4,7 +4,9 @@ description: This tutorial will show you how to make authenticated api calls wit
 budicon: 546
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '08-Calling-Api',

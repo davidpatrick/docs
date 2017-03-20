@@ -15,21 +15,50 @@ snippets:
   use: client-platforms/react/use
 seo_alias: react
 default_article: dashboard-default
-articles:
-  - 00-getting-started
-  - 01-login
-  - 02-custom-login
-  - 03-session-handling
-  - 04-user-profile
-  - 05-linking-accounts
-  - 06-rules
-  - 07-authorization
-  - 08-calling-apis
-  - 09-mfa
-  - 10-customizing-lock
-previous_versions:
+current_version: oidc
+versions:
+  oidc:
+    title: 'OIDC'
+    articles:
+      - 00-getting-started
+      - 01-login
+      - 02-custom-login
+      - 03-session-handling
+      - 04-user-profile
+      - 05-linking-accounts
+      - 06-rules
+      - 07-authorization
+      - 08-calling-apis
+      - 09-mfa
+      - 10-customizing-lock
+  saml:
+    title: 'SAML'
+    articles:
+      - 00-getting-started
+      - 01-login
+      - 02-custom-login
+      - 04-user-profile
+      - 05-linking-accounts
+      - 06-rules
+      - 07-authorization
+      - 08-calling-apis
+      - 09-mfa
+      - 10-customizing-lock
+  ws-fed:
+    title: 'WS-Fed'
+    articles:
+      - 00-getting-started
+      - 01-login
+      - 02-custom-login
+      - 04-user-profile
+      - 05-linking-accounts
+      - 06-rules
+      - 07-authorization
+      - 08-calling-apis
+      - 09-mfa
+      - 10-customizing-lock
   legacy:
-    title: 'Legacy'
+    title: 'Legacy Auth0'
     articles:
       - 00-getting-started
       - 01-login

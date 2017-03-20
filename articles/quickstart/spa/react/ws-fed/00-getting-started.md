@@ -4,7 +4,7 @@ description: Initial steps to integrate Auth0 in a React application.
 budicon: 715
 ---
 
-**LEGACY VERSION**
+**WS-FED VERSION**
 
 This quickstart guide contains individual steps which demonstrate how to use various Auth0 features in your React applications. Each step has a dedicated sample project which can be downloaded directly from the doc or forked on Github. If you are logged in to your Auth0 account, the samples will have your Auth0 credentials pre-populated for you.
 

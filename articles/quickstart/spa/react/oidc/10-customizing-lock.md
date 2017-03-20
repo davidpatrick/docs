@@ -4,7 +4,9 @@ description: This tutorial will show you how to customize lock widget.
 budicon: 285
 ---
 
-<%= include('../../../_includes/_package', {
+**EXAMPLE OF OUTDATED VERSION**
+
+<%= include('../../../../_includes/_package', {
   org: 'auth0-samples',
   repo: 'auth0-react-sample',
   path: '10-Customizing-Lock',
