@@ -19,6 +19,7 @@ current_version: oidc
 versions:
   oidc:
     title: 'OIDC'
+    details: Some details available
     articles:
       - 00-getting-started
       - 01-login
@@ -33,6 +34,7 @@ versions:
       - 10-customizing-lock
   saml:
     title: 'SAML'
+    details: Some details available
     articles:
       - 00-getting-started
       - 01-login
