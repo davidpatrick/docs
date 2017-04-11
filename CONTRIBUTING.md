@@ -20,6 +20,8 @@ The following is a set of guidelines for contributing to the Auth0 documentation
   * [Screenshots](#screenshots)
   * [Front Matter](#front-matter)
 
+[Versioning](#versioning)
+
 [Finishing](#finishing)
 
 [Editing Text](#editing-with-wordy)
@@ -30,6 +32,7 @@ The following is a set of guidelines for contributing to the Auth0 documentation
 
 [Quickstarts](#quickstarts)
   * [Creating Quickstarts](#creating-quickstarts)
+  * [Versioning Quickstarts](#versioning-quickstarts)
   * [Quickstart Guidelines](#quickstart-guidelines)
   * [Seed Projects](#seed-projects)
 
@@ -347,6 +350,66 @@ The `title` will generally be a single word like Introduction or Login as it wil
 
 After you publish the doc update, the new quickstart will automatically appear on both docs and manage.
 
+### Versioning Quickstarts
+The filesystem structure for a versioned quickstart looks like this:
+
+```
+react/
+  _details/
+    legacy.md
+    oidc.md
+  _includes/
+    _dependencies.md
+  legacy/
+    00-getting-started.md
+    01-login.md
+    02-custom-login.md
+  oidc/
+    00-getting-started.md
+    01-login.md
+    02-custom-login.md
+  dashboard-default.md
+  index.yml
+```
+
+In this case `react` is the name of the quickstart that has versions, and the two versions available are `legacy` and `oidc`.
+
+To create a versioned topic, the `react/index.yml` file must contain a `versions` property witha neste a set of versions. Here's an example `index.yml`:
+
+```yaml
+---
+title: React
+default_article: dashboard-default
+current_version: oidc
+versions:
+  legacy:
+    title: OIDC
+    articles:
+      - 00-getting-started
+      - 01-login
+      - 02-custom-login
+  oidc:
+    title: OIDC
+    articles:
+      - 00-getting-started
+      - 01-login
+      - 02-custom-login
+---
+```
+
+Take notice to the additional properties on a versioned quickstart:
+
+* `current_version` -- The name of the current version. This must be present in the `versions` array.
+* `versions` -- An array of all versions of the quickstart.  Each version must have a title and articles property.
+
+Versions details are used to communicate the differences in versions to the customer. OIDC and Legacy have defaults, however, you can set customize any version details by including a markdown file in the `_details` folder with a the corresponding version name.
+
+```
+react/
+  _details/
+    version-name.md
+```
+
 ### Quickstart Guidelines
 Each framework will have a set of articles that comprise the quickstarts. The set of articles each framework will have depends on the function of each. Below is an outline of the documentats that should be created for each framework.
 
@@ -623,9 +686,11 @@ When writing docs you can use the following variables instead of hard-coding the
 | Variable  | Description | Default Value |
 | :---------------------------- | :----------------------------------------- | :-------------------------------------- |
 | `manage_url`                       | The url to the management portal.          | `https://manage.auth0.com`              |
-| `auth0js_url`                 | The url to the auth0.js CDN location.      | |
+| `auth0js_url`                 | The url to the auth0.js v7 CDN location.      | |
+| `auth0js_urlv8`                 | The url to the auth0.js v8 CDN location.      | |
 | `lock_url`                  | The url to the Lock script CDN location.   | |
 | `lock_passwordless_url`       | The url to the Passwordless Lock script CDN location. | |
+| `env.DOMAIN_URL_SUPPORT` | Support Center URL | `https://support.auth0.com/` |
 
 
 ### User Specific Variables
@@ -638,3 +703,105 @@ When writing docs you can use the following variables instead of hard-coding the
 | `account.clientId`     | The Client ID of the current Auth0 app.            | `YOUR_CLIENT_ID`                       |
 | `account.clientSecret` | The Client Secret of the current Auth0 app.        | `YOUR_CLIENT_SECRET`                   |
 | `account.callback`     | The first callback URL of the current Auth0 app.   | `http://YOUR_APP.auth0.com/callback`   |
+
+# Versioning
+> **NOTE:** For Versioning Quickstarts view [Versioning Quickstarts](#versioning-quickstarts)
+
+Building on the system we established for Quickstarts, topic versioning is controlled by adding metadata to `index.yml` files. The filesystem structure for a versioned topic looks like this:
+
+```
+lock/
+  v9/
+    article1.md
+    article2.md
+  v10/
+    article1.md
+    article2.md
+    article3.md
+  index.yml
+```
+
+In this case `lock` is the name of the topic that has versions, and the two versions available are `v9` and `v10`. Note that different versions of the same topic may have different articles; more on this later.
+
+To create a versioned topic, the `lock/index.yml` file must contain a `versioning` property. Here's an example:
+
+```yaml
+versioning:
+  baseUrl: libraries/lock
+  current: v10
+  versions:
+    - v9
+    - v10
+  defaultArticles:
+    v1: article1
+```
+
+The `versioning` object has the following properties:
+
+* `baseUrl` -- The URL for the topic. This is used to construct URLs for corresponding versions of a given article when a user navigates between.
+* `current` -- The name of the current version. This must be present in the `versions` array.
+* `versions` -- An array of all versions of the topic. Each of these must have a corresponding subdirectory beneath the topic directory.
+* `defaultArticles` -- A map of default articles for each version. (Explained below)
+
+## User interface
+
+When a user views an article within a versioned topic, a banner will be added to the top of the page:
+
+![screen shot 2017-02-15 at 10 31 41 am](https://cloud.githubusercontent.com/assets/1576/22981261/f8c641fa-f369-11e6-9bf0-3a20865cb508.png)
+
+The user can navigate between versions of the topic by selecting a new version from the drop-down box. If an article with the same filename is present in the newly-selected version, the user will navigate to that article. If no article with the same filename is present, they will instead receive a HTTP redirect (302) to the *default article* for that version.
+
+By default, the default article for a version is the first article in the subdirectory (sorted alphabetically, ascending). To change this, you can add an entry in the `defaultArticles` map of the `versioning` object in `index.yml`.
+
+## Limitations
+
+### No sub-directories
+
+This versioning system has one major limitation: all articles for each version must exist in the same directory. For example, this is a valid hierarchy:
+
+
+```
+example/
+  v1/
+    foo.md
+    bar.md
+  v2/
+    foo.md
+    bar.md
+  index.yml
+```
+
+But this hierarchy will not work:
+
+
+```
+example/
+  v1/
+    subtopic/
+      foo.md
+    bar.md
+  v10/
+    subtopic/
+      foo.md
+    bar.md
+  index.yml
+```
+
+This limitation is a result of the implementation of `AutoVersionPlugin`, and how the paths are calculated for the different versions. Fixing this is possible, but makes things a little more tricky, so I decided to cut it from the first version of the feature. If it's a desired behavior we can always add it later.
+
+### Case Sensitive
+
+The folder name must match exactly the names listed in the yaml file. This is case sensitive.
+
+For example, given the following yaml, naming the subdirectory `V9` instead of `v9` will result into a build error.
+
+```yaml
+versioning:
+  baseUrl: libraries/lock
+  current: v10
+  versions:
+    - v9
+    - v10
+  defaultArticles:
+    v1: article1
+```
