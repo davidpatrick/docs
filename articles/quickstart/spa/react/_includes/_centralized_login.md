@@ -13,7 +13,7 @@ In this tutorial, the route is `/callback`, which is implemented in the [Add a C
 
 Add a `login` method that calls the `authorize` method from auth0.js.
 
-```js
+```js {data-appear-in-search=true}
 // src/Auth/Auth.js
 
 import auth0 from 'auth0-js';

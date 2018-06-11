@@ -19,7 +19,7 @@ budicon: 448
 
 To the `Auth` service, add a method which calls the `checkSession` method from auth0.js. If the renewal is successful, use the existing `setSession` method to set new tokens in local storage.
 
-```js
+```js {data-appear-in-search=true}
 // src/Auth/Auth.js
 
 renewToken() {

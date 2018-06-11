@@ -41,7 +41,7 @@ At a basic level, two items are required for a custom login UI: the component an
 
 Create a component which has a template with a `form` and controls for submitting a `login`, `signup`, and `loginWithGoogle` request. The `AuthService` that is used in this component will be created later.
 
-```js
+```js {data-appear-in-search=true}
 import React, { PropTypes as T } from 'react'
 import ReactDOM from 'react-dom'
 import {Form, FormGroup, FormControl, ControlLabel, Button, ButtonToolbar} from 'react-bootstrap'

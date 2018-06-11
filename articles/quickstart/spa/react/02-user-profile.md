@@ -34,7 +34,7 @@ auth0 = new auth0.WebAuth({
 
 Add a method that calls the `client.userInfo` method to the `Auth` service.
 
-```js
+```js {data-appear-in-search=true}
 // src/Auth/Auth.js
 
 constructor() {
