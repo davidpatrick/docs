@@ -196,7 +196,7 @@ articles:
         url: "/connections/database"
         children:
           - title: "Custom Databases"
-          url: "/connections/database/custom-db"
+            url: "/connections/database/custom-db"
 
           - title: "Password Policies"
             url: "/connections/database/password-options"
