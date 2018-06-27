@@ -796,10 +796,6 @@ module.exports = [
     to: '/tutorials/generic-oauth2-connection-examples'
   },
   {
-    from: '/tutorials/setup-up-authentication',
-    to: '/multifactor-authentication/developer/step-up-with-acr'
-  },
-  {
     from: ['/refresh-token', '/tokens/refresh_token'],
     to: '/tokens/refresh-token'
   },
@@ -1290,7 +1286,7 @@ module.exports = [
   },
   {
     from: '/tutorials/step-up-authentication',
-    to: '/multifactor-authentication/developer/step-up-with-acr'
+    to: '/multifactor-authentication/step-up-authentication'
   },
   {
     from: '/quickstart/spa/angular2/00-login',
@@ -1618,7 +1614,7 @@ module.exports = [
   },
   {
     from: '/multifactor-authentication/developer/step-up-with-acr',
-    to: '/multifactor-authentication/developer/step-up-authentication'
+    to: '/multifactor-authentication/step-up-authentication'
   },
   {
     from: '/users/bulk-importing-users-into-auth0',
@@ -1723,6 +1719,18 @@ module.exports = [
   {
     from: '/guides/login/migration-embedded-centralized',
     to: '/guides/login/migration-embedded-universal'
+  },
+  {
+    from: 'multifactor-authentication/administrator',
+    to: 'multifactor-authentication/guardian/administrator'
+  },
+  {
+    from: 'multifactor-authentication/developer',
+    to: 'multifactor-authentication/guardian/developer'
+  },
+  {
+    from: '/users/search',
+    to: '/users/search/v3'
   },
   {
     from: '/api/management/v2/user-search',
