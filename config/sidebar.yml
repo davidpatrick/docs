@@ -1176,7 +1176,7 @@ appliance:
         url: /appliance/monitoring
         children:
           - title: Instrumentation
-            url: /appliance/instrumentation
+            url: /appliance/monitoring/instrumentation
           - title: Testall endpoint
             url: /appliance/monitoring/testall
           - title: Authenticated testing endpoints
