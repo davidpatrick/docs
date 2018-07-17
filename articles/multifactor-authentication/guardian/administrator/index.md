@@ -1,5 +1,6 @@
 ---
 description: How to enable and use Push Notifications and SMS for Guardian MFA.
+url: /multifactor-authentication/administrator
 topics:
   - mfa
   - guardian

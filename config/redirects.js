@@ -1286,7 +1286,7 @@ module.exports = [
   },
   {
     from: '/tutorials/step-up-authentication',
-    to: '/multifactor-authentication/step-up-authentication'
+    to: '/multifactor-authentication/step-up-with-authentication'
   },
   {
     from: '/quickstart/spa/angular2/00-login',
@@ -1423,10 +1423,6 @@ module.exports = [
   {
     from: '/tutorials/sending-events-to-keenio',
     to: '/monitoring/sending-events-to-keenio',
-  },
-  {
-    from: '/appliance/instrumentation',
-    to: '/appliance/monitoring/instrumentation'
   },
   {
     from: '/tutorials/cancel-paid-subscriptions',
@@ -1725,18 +1721,6 @@ module.exports = [
     to: '/guides/login/migration-embedded-universal'
   },
   {
-    from: 'multifactor-authentication/administrator',
-    to: 'multifactor-authentication/guardian/administrator'
-  },
-  {
-    from: 'multifactor-authentication/developer',
-    to: 'multifactor-authentication/guardian/developer'
-  },
-  {
-    from: '/users/search',
-    to: '/users/search/v3'
-  },
-  {
     from: '/api/management/v2/user-search',
     to: '/users/search/v2'
   },
@@ -1833,9 +1817,9 @@ module.exports = [
     to: '/architecture-scenarios/web-app-sso/implementation-aspnetcore'
   },
   {
-     from: '/applications/application-settings/non-interactive',
-     to: '/applications/machine-to-machine#settings'
-   },
+    from: '/applications/application-settings/non-interactive',
+    to: '/applications/machine-to-machine#settings'
+  },
   {
     from: '/applications/application-settings/machine-to-machine',
     to: '/applications/machine-to-machine#settings'
@@ -1851,5 +1835,41 @@ module.exports = [
   {
     from: '/applications/application-settings/single-page-app',
     to: '/applications/spa#settings'
+  },
+  {
+    from: '/appliance/instrumentation',
+    to: '/appliance/monitoring/instrumentation'
+  },
+  {
+    from: '/users/search',
+    to: '/users/search/v3'
+  },
+  {
+    from: '/multifactor-authentication/developer/step-up-authentication',
+    to: '/multifactor-authentication/step-up-authentication'
+  },
+  {
+    from: '/multifactor-authentication/developer/step-up-authentication/step-up-for-apis',
+    to: '/multifactor-authentication/step-up-authentication/step-up-for-apis'
+  },
+  {
+    from: '/multifactor-authentication/developer/step-up-authentication/step-up-for-web-apps',
+    to: '/multifactor-authentication/step-up-authentication/step-up-for-web-apps'
+  },
+  {
+    from: '/onboarding/appliance-sprint',
+    to: '/appliance/onboarding/appliance-sprint'
+  },
+  {
+    from: '/onboarding/cloud-sprint',
+    to: '/appliance/onboarding/cloud-sprint'
+  },
+  {
+    from: '/onboarding/enterprise-support',
+    to: '/appliance/onboarding/enterprise-support'
+  },
+  {
+    from: '/onboarding/sprint',
+    to: '/appliance/onboarding/sprint'
   }
 ];
