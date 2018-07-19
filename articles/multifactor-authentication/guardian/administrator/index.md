@@ -38,5 +38,5 @@ This page contains information on how to enable and configure Guardian as an adm
 
 
 ## Additional Documents
-* [Guardian for Developers](/multifactor-authentication/developer)
+* [Guardian for Developers](/multifactor-authentication/guardian/developer)
 * [Guardian for Users](/multifactor-authentication/guardian/user-guide)

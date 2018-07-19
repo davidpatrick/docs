@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Guardian for iOS
-url: /multifactor-authentication/developer/libraries/ios
+url: /multifactor-authentication/guardian/developer/libraries/ios
 description: Installation, usage, and configuration options guide for Guardian for iOS
 topics:
   - mfa
@@ -51,7 +51,7 @@ To enable Guardian Push Notifications for your users, go to the [Multifactor Aut
 
 ## SNS configuration
 
-For your native application to receive push notifications from Guardian, you will need to override the default SNS settings. Follow the instructions [here](/multifactor-authentication/developer/sns-configuration).
+For your native application to receive push notifications from Guardian, you will need to override the default SNS settings. Follow the instructions [here](/multifactor-authentication/guardian/developer/sns-configuration).
 
 ## Using the SDK
 
@@ -193,5 +193,5 @@ Guardian
 
 ## Additional Documents
 
-* [Configuring Amazon SNS with Guardian](/multifactor-authentication/developer/sns-configuration)
+* [Configuring Amazon SNS with Guardian](/multifactor-authentication/guardian/developer/sns-configuration)
 * [Getting Started with Apple Push Notification Service](https://docs.aws.amazon.com/sns/latest/dg/mobile-push-apns.html)

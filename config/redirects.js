@@ -1613,7 +1613,7 @@ module.exports = [
     to: '/i18n'
   },
   {
-    from: '/multifactor-authentication/developer/step-up-with-acr',
+    from: '/multifactor-authentication/guardian/developer/step-up-with-acr',
     to: '/multifactor-authentication/step-up-authentication'
   },
   {
@@ -1845,15 +1845,15 @@ module.exports = [
     to: '/users/search/v3'
   },
   {
-    from: '/multifactor-authentication/developer/step-up-authentication',
+    from: '/multifactor-authentication/guardian/developer/step-up-authentication',
     to: '/multifactor-authentication/step-up-authentication'
   },
   {
-    from: '/multifactor-authentication/developer/step-up-authentication/step-up-for-apis',
+    from: '/multifactor-authentication/guardian/developer/step-up-authentication/step-up-for-apis',
     to: '/multifactor-authentication/step-up-authentication/step-up-for-apis'
   },
   {
-    from: '/multifactor-authentication/developer/step-up-authentication/step-up-for-web-apps',
+    from: '/multifactor-authentication/guardian/developer/step-up-authentication/step-up-for-web-apps',
     to: '/multifactor-authentication/step-up-authentication/step-up-for-web-apps'
   },
   {

@@ -215,5 +215,5 @@ That's it, you're done! Now your application allows access to different types of
 * [Overview of rules](/rules)
 * [Overview of scopes](/scopes)
 * [How to verify Access Tokens](/api-auth/tutorials/verify-access-token)
-* [Step-up Authentication for Web Apps](/multifactor-authentication/developer/step-up-authentication/step-up-for-web-apps)
+* [Step-up Authentication for Web Apps](/multifactor-authentication/guardian/developer/step-up-authentication/step-up-for-web-apps)
 :::

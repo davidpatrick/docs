@@ -1,6 +1,6 @@
 ---
 title: Getting Started with Guardian for Android
-url: /multifactor-authentication/developer/libraries/android
+url: /multifactor-authentication/guardian/developer/libraries/android
 description: Installation, usage, and configuration options guide for Guardian for Android
 topics:
   - mfa
@@ -46,7 +46,7 @@ To enable Guardian Push Notifications for your users, go to the [Multifactor Aut
 
 ## SNS configuration
 
-For your native application to receive push notifications from Guardian, you will need to override the default SNS settings. Follow the instructions [here](/multifactor-authentication/developer/sns-configuration).
+For your native application to receive push notifications from Guardian, you will need to override the default SNS settings. Follow the instructions [here](/multifactor-authentication/guardian/developer/sns-configuration).
 
 ## Using the SDK
 
@@ -172,5 +172,5 @@ guardian
 
 ## Additional Documents
 
-* [Configuring Amazon SNS with Guardian](/multifactor-authentication/developer/sns-configuration)
+* [Configuring Amazon SNS with Guardian](/multifactor-authentication/guardian/developer/sns-configuration)
 * [Getting Started with Google Cloud Messaging for Android](https://docs.aws.amazon.com/sns/latest/dg/mobile-push-gcm.html)

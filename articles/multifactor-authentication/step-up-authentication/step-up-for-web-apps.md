@@ -183,5 +183,5 @@ That's it, you are done!
 * [Overview of ID Tokens](/tokens/id-token)
 * [Overview of JSON Web Tokens](/jwt)
 * [OpenID specification](http://openid.net/specs/openid-connect-core-1_0.html)
-* [Step-up Authentication for APIs](/multifactor-authentication/developer/step-up-authentication/step-up-for-apis)
+* [Step-up Authentication for APIs](/multifactor-authentication/guardian/developer/step-up-authentication/step-up-for-apis)
 :::
