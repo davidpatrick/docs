@@ -1,6 +1,8 @@
 ---
 description: A whirlwind tour of identity history, concepts, and terminology - protocols, open standards, SSO, OAuth2, OpenID Connect and more.
 classes: video-page
+image: https://cdn2.auth0.com/docs/media/articles/learn-identity/learn-identity-intro.jpg
+video: https://www.youtube.com/watch?v=Xt-iPaT6FXQ
 ---
 # Introduction to Identity
 
